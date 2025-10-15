@@ -9,5 +9,7 @@
     
     <h1>Exemplos de PHP com POO</h1>
     <hr>
+    <h2>Trabalhando com classes e objetos</h2>
+
 </body>
 </html>
