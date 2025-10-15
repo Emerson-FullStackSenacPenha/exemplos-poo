@@ -7,7 +7,7 @@
 </head>
 <body>
     
-    <h1>Exemplos de PHO com POO</h1>
+    <h1>Exemplos de PHP com POO</h1>
     <hr>
 </body>
 </html>
