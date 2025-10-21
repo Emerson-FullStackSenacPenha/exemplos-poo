@@ -50,6 +50,7 @@ $clienteB->email = "jon@gmail.com";
         <p><b>Idade:</b> <i><?=$clienteB->idade?></i></p> 
         <p><b>E-mail:</b> <i><?=$clienteB->email?></i></p> 
         
+        
     </section>
 
     <hr>
