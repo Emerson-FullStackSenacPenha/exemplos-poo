@@ -10,7 +10,7 @@ public int $paginas;
         echo "  <div>
         
                 <p> O livro <b>$this->titulo</b>, tem em torno de  <i>$this->paginas</i> páginas.
-                
+
                 </div>";
 
     }
