@@ -9,7 +9,9 @@ class Cliente {
     /* Método construtor: Responsável por 'construir' um objeto COM seus dadso no momento da criação*/
 
     public function __construct( string $valorDoNome, int $valorDaIdade, string $valorDoEmail ){
-        
+        $this->nome = $valorDoNome;
+        $this->idade = $valorDaIdade;
+        $this->email = $valorDoEmail;
     }
 
 };
