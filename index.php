@@ -33,25 +33,30 @@ $clienteB->email = "jon@gmail.com";
 
     <h3>Acessando/lendo os dados dos objetos</h3>
 
+   <!-- Chamando os dados da forma 1
+
     <h4>Cliente A</h4>
     <ul>
-        <li>Nome: <?=$clienteA->nome?> </li>
-        <li>Idade: <?=$clienteA->idade?> </li>
-        <li>E-mail: <?=$clienteA->email?></li>
+        <li>Nome: < ?=$clienteA->nome?> </li>
+        <li>Idade: < ?=$clienteA->idade?> </li>
+        <li>E-mail: < ?=$clienteA->email?></li>
     </ul>
 
-    <!-- Faça os dados do clienteB aparecerem dentro de uma section. Use h4, parágrafo, negrito etc. -->
+     Faça os dados do clienteB aparecerem dentro de uma section. Use h4, parágrafo, negrito etc.
 
     <section>
 
         <h4>Cliente B</h4>
 
-        <p><b>Nome:</b>  <i><?=$clienteB->nome?></i></p> 
-        <p><b>Idade:</b> <i><?=$clienteB->idade?></i></p> 
-        <p><b>E-mail:</b> <i><?=$clienteB->email?></i></p> 
+        <p><b>Nome:</b>  <i>< ?=$clienteB->nome?></i></p> 
+        <p><b>Idade:</b> <i>< ?=$clienteB->idade?></i></p> 
+        <p><b>E-mail:</b> <i>< ?=$clienteB->email?></i></p> 
         
-        
-    </section>
+    </section> -->
+
+    <!-- Chamando os dados da forma 2 com um Método (função) -->
+    <?=$clienteA->mostrarDados()?>
+    <?=$clienteB->mostrarDados()?>
 
     <hr>
     <h3>Visualizando a estrutura dos objetos</h3>
