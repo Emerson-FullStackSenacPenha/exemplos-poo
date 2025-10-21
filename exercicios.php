@@ -5,17 +5,17 @@ $livroA = new Livro();
 $livroB = new Livro();
 $livroC = new Livro();
 
-$livroA->titulo = "Cem Anos de Solidão";
-$livroA->autor = "Gabriel García Márquez";
-$livroA->paginas = 448;
+$livroA->titulo = "O Senhor dos Anéis: A Sociedade do Anel";
+$livroA->autor = "J.R.R. Tolkien";
+$livroA->paginas = 480;
 
-$livroB->titulo = "Ensaio Sobre a Cegueira";
-$livroB->autor = "José Saramago";
-$livroB->paginas = 312;
+$livroB->titulo = "O Senhor dos Anéis: As Duas Torres";
+$livroB->autor = "J.R.R. Tolkien";
+$livroB->paginas = 400;
 
-$livroC->titulo = "O Pequeno Príncipe";
-$livroC->autor = "Antoine de Saint-Exupéry";
-$livroC->paginas = 96;
+$livroC->titulo = "O Senhor dos Anéis: O Retorno do Rei";
+$livroC->autor = "J.R.R. Tolkien";
+$livroC->paginas = 420;
 
 ?>
 
@@ -24,7 +24,7 @@ $livroC->paginas = 96;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio do Livro</title>
+    <title>Exercicio de PHP com POO</title>
 </head>
 <body>
     
@@ -33,6 +33,8 @@ $livroC->paginas = 96;
 <?=$livroA->mostrarDados()?>
 <?=$livroB->mostrarDados()?>
 <?=$livroC->mostrarDados()?>
+
+<p>E ambos livros é do autor <b><?=$livroA->autor?></b>.</p>
 
 </body>
 </html>
