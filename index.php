@@ -40,6 +40,18 @@ $clienteB->email = "jon@gmail.com";
         <li>E-mail: <?=$clienteA->email?></li>
     </ul>
 
+    <!-- Faça os dados do clienteB aparecerem dentro de uma section. Use h4, parágrafo, negrito etc. -->
+
+    <section>
+
+        <h4>Cliente B</h4>
+
+        <p><b>Nome:</b>  <i><?=$clienteB->nome?></i></p> 
+        <p><b>Idade:</b> <i><?=$clienteB->idade?></i></p> 
+        <p><b>E-mail:</b> <i><?=$clienteB->email?></i></p> 
+        
+    </section>
+
     <hr>
     <h3>Visualizando a estrutura dos objetos</h3>
     <pre> <?=var_dump($clienteA, $clienteB)?> </pre>
