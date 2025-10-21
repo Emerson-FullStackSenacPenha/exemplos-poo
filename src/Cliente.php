@@ -2,24 +2,15 @@
 
 class Cliente {
 
-    /* Atributos da clase: Representam caracteristicas que os objetos deverão ter
-    */
-
     public string $nome;
     public int $idade;
     public string $email;
-    
-    /* Método responsável por exibir dados de um objeto */
 
-    public function mostrarDados():void {
+    /* Método construtor: Responsável por 'construir' um objeto COM seus dadso no momento da criação*/
+
+    public function __construct( string $valorDoNome, int $valorDaIdade, string $valorDoEmail ){
         
-        echo "  <div>
-                    <h4> $this->nome </h4>
-                    <p><b>E-mail de contato:</b> $this->email </p>
-                    <p><b>Idade:</b> $this->idade anos </p>
-                </div>";
-        
-        }   
+    }
 
 };
 
