@@ -27,21 +27,13 @@ $clienteC = new Cliente("Joãozinho", 40, "joaozinho@gmail.com", "11-2135-0300")
     <hr>
     <h3>Visualizando a estrutura dos objetos</h3>
     
-    <pre>
-        <?=var_dump($clienteA)?>
-        <?=var_dump($clienteB)?>
-        <?=var_dump($clienteC)?>
-    </pre>
-
-    <hr>
-    <!-- Sobreescrevendo o valor de um atributo do objeto -->
-    <p>Sobreescrevendo o valor de um atributo do objeto</p>
+    <div>
+        <h2> <?=$clienteA->getNome()?> </h2>
+        <p><?=$clienteA->getIdade()?> anos</p>
+        <p><?=$clienteA->getEmail()?> </p>
+    </div>
     
-    <?php 
-        $clienteA->nome = "William";
-    ?>
-    <pre> <?=var_dump($clienteA)?> </pre>
-
+  
 
 </body>
 </html>

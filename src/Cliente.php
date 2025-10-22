@@ -21,6 +21,32 @@ class Cliente {
         $this->telefone = $valorDoTelefone;
     }
 
+    /* Métodos getters, getNome "recomendação de boas práticas */
+
+    public function getNome():string {
+
+        return $this->nome;
+
+    }
+
+    public function getIdade():int {
+
+        return $this->idade;
+
+    }
+
+    public function getEmail():string {
+
+        return $this->email;
+
+    }
+
+    public function getTelefone():string {
+
+        return $this->telefone;
+
+    }
+
 };
 
 ?>
