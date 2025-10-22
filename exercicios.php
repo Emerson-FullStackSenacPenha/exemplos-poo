@@ -28,8 +28,6 @@ $livroC = new Livro("O Retorno do Rei", "J.R.R. Tolkien", 420);
 
 </ol>
 
-
-
 <p>E ambos livros é do autor <b><?=$livroA->autor?></b>.</p> 
 <hr>
 
@@ -45,6 +43,9 @@ $livroC = new Livro("O Retorno do Rei", "J.R.R. Tolkien", 420);
     <p style="color: red;"> Não tem páginas </p>
 <?php endif; ?>
 
+<!-- Tem páginas ? Mosta as páginas. 
+ Não tem? Mostra o "Sem páginas" -->
+<?=$livroA->paginas ?? "Sem páginas" ?>
 
 </body>
 </html>
