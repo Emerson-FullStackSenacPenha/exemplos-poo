@@ -5,6 +5,8 @@ require_once "src/Cliente.php";
 $clienteA = new Cliente("Mônica", 30, "monica@gmail.com");
 $clienteB = new Cliente("José", 15, "jose@gmail.com");
 
+// Neste objeto, passamos inclusive o telefone (que nos anteriores, foi opcional)
+$clienteC = new Cliente("Joãozinho", 40, "joaozinho@gmail.com", "11-2135-0300");
 
 
 ?>
@@ -26,7 +28,9 @@ $clienteB = new Cliente("José", 15, "jose@gmail.com");
     <h3>Visualizando a estrutura dos objetos</h3>
     
     <pre>
+        <?=var_dump($clienteA)?>
         <?=var_dump($clienteB)?>
+        <?=var_dump($clienteC)?>
     </pre>
 
 </body>
