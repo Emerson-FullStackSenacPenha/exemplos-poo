@@ -9,7 +9,7 @@ public ?int $paginas;
 
         string $valorDoTitulo,
         string $valorDoAutor,
-        ?string $valorDaPagina = null
+        ?int $valorDaPagina = null
     
     ){
       
@@ -18,8 +18,6 @@ public ?int $paginas;
         $this->paginas = $valorDaPagina;
         
     }
-
-
 
     public function verificarTitulo(): void {
 
