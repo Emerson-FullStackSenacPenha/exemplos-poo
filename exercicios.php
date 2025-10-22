@@ -1,21 +1,9 @@
 <?php
 require_once "src/Livro.php";
 
-$livroA = new Livro();
-$livroB = new Livro();
-$livroC = new Livro();
-
-$livroA->titulo = "O Senhor dos Anéis: A Sociedade do Anel";
-$livroA->autor = "J.R.R. Tolkien";
-$livroA->paginas = 480;
-
-$livroB->titulo = "O Senhor dos Anéis: As Duas Torres";
-$livroB->autor = "J.R.R. Tolkien";
-$livroB->paginas = 400;
-
-$livroC->titulo = "O Senhor dos Anéis: O Retorno do Rei";
-$livroC->autor = "J.R.R. Tolkien";
-$livroC->paginas = 420;
+$livroA = new Livro("A Sociedade do Anel", "J.R.R. Tolkien");
+$livroB = new Livro("2🗼", "J.R.R. Tolkien", 380);
+$livroC = new Livro("O Retorno do Rei", "J.R.R. Tolkien", 420);
 
 ?>
 
@@ -30,9 +18,16 @@ $livroC->paginas = 420;
     
 <h1>Exercicio de mostrar livros através de PHP com POO</h1>
 
-<?=$livroA->mostrarDados()?>
-<?=$livroB->mostrarDados()?>
-<?=$livroC->mostrarDados()?>
+<h2>Os livros de <b>O Senhor dos Anéis</b> são:</h2>
+
+<ol>
+
+    <li><?=$livroA->titulo?>, com <?=var_dump($livroA->paginas)?> páginas. <?=$livroA->verificarTitulo();?></li>
+    
+    <li><?=$livroB->titulo?>, com <?=$livroB->paginas?> páginas. <?=$livroB->verificarTitulo();?></li>
+    <li><?=$livroC->titulo?>, com <?=$livroC->paginas?> páginas. <?=$livroC->verificarTitulo();?></li>
+
+</ol>
 
 <p>E ambos livros é do autor <b><?=$livroA->autor?></b>.</p>
 
