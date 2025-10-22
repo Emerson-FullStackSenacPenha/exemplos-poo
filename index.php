@@ -33,5 +33,15 @@ $clienteC = new Cliente("Joãozinho", 40, "joaozinho@gmail.com", "11-2135-0300")
         <?=var_dump($clienteC)?>
     </pre>
 
+    <hr>
+    <!-- Sobreescrevendo o valor de um atributo do objeto -->
+    <p>Sobreescrevendo o valor de um atributo do objeto</p>
+    
+    <?php 
+        $clienteA->nome = "William";
+    ?>
+    <pre> <?=var_dump($clienteA)?> </pre>
+
+
 </body>
 </html>
