@@ -15,10 +15,12 @@ class Cliente {
         ?string $valorDoTelefone = null
         
         ){
+
         $this->nome = $valorDoNome;
         $this->idade = $valorDaIdade;
         $this->email = $valorDoEmail;
         $this->telefone = $valorDoTelefone;
+
     }
 
     /* Métodos getters, getNome "recomendação de boas práticas */
