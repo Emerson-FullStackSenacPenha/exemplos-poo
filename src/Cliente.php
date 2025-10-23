@@ -41,7 +41,7 @@ class Cliente {
 
     }
 
-    public function getTelefone():string {
+    public function getTelefone():?string {
 
         return $this->telefone;
 

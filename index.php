@@ -31,6 +31,7 @@ $clienteC = new Cliente("Joãozinho", 40, "joaozinho@gmail.com", "11-2135-0300")
         <h2> <?=$clienteA->getNome()?> </h2>
         <p><?=$clienteA->getIdade()?> anos</p>
         <p><?=$clienteA->getEmail()?> </p>
+        <p><?=$clienteA->getTelefone()?> </p>
     </div>
     
   
