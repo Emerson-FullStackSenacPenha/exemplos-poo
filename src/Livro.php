@@ -1,9 +1,9 @@
 <?php
 class Livro {
 
-public string $titulo;
-public string $autor;
-public ?int $paginas;
+private string $titulo;
+private string $autor;
+private ?int $paginas;
 
     public function __construct(
 
@@ -13,17 +13,53 @@ public ?int $paginas;
     
     ){
       
-        $this->titulo = $valorDoTitulo;
+        $this->setTitulo ($valorDoTitulo);
         $this->autor = $valorDoAutor;
-        $this->paginas = $valorDaPagina;
+        $this->setPaginas ($valorDaPagina);
         
     }
 
-    public function verificarTitulo(): void {
+    public function getTitulo():string {
 
-        if (mb_strlen($this->titulo) < 3 ) {
-            echo '<p style="color: red;"> Titulo não pode ter menos do que 3 letras </p>';
+        return $this->titulo;
+
+    }
+
+    public function getAutor():string {
+
+        return $this->autor;
+
+    }
+
+    public function getPaginas():int {
+
+        return $this->paginas;
+
+    }
+
+    private function setTitulo(string $valorDoTitulo):void{
+
+        if((mb_strlen($valorDoTitulo) <= 30 )){
+            echo "<p style='color:red'>Titulo não pode ser menor que 30</p>";
         }
+
+        $this->titulo = $valorDoTitulo;
+
+    }
+
+    private function setPaginas($valorDaPagina):void {
+
+        if(empty($valorDaPagina)){
+
+            // Apresentamos uma mensagem alertando
+            echo "<p style='color:red'>Nome não pode ser vazio</p>";
+        } else {
+
+            // Senão, pegamos o valor do nome e colocamos no atributo do objeto
+            $this->paginas = $valorDaPagina;
+
+        }
+
 
     }
 
