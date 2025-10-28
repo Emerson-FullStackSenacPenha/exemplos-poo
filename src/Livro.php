@@ -31,7 +31,7 @@ private ?int $paginas;
 
     }
 
-    public function getPaginas():int {
+    public function getPaginas():?int {
 
         return $this->paginas;
 
@@ -47,18 +47,18 @@ private ?int $paginas;
 
     }
 
-    private function setPaginas($valorDaPagina):void {
+    private function setPaginas(?int $valorDaPagina):void {
 
         if(empty($valorDaPagina)){
 
             // Apresentamos uma mensagem alertando
             echo "<p style='color:red'>Nome não pode ser vazio</p>";
-        } else {
+        } 
 
             // Senão, pegamos o valor do nome e colocamos no atributo do objeto
             $this->paginas = $valorDaPagina;
 
-        }
+        
 
 
     }

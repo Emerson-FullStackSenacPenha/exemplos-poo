@@ -1,7 +1,7 @@
 <?php
 require_once "src/Livro.php";
 
-$livroA = new Livro("A Sociedade do Anel", "J.R.R. Tolkien");
+$livroA = new Livro("A Sociedade do Anel", "J.R.R. Tolkien", 250);
 
 /*
 $livroB = new Livro("2🗼", "J.R.R. Tolkien", 380);
@@ -24,9 +24,8 @@ $livroC = new Livro("O Retorno do Rei", "J.R.R. Tolkien", 420);
 
 <ol>
 
-    <li><?=$livroA->getTitulo()?>, com <?=$livroA->getPaginas()?> </li>
+    <li> <?=$livroA->getTitulo()?>, com <?=$livroA->getPaginas() ?? "não informado"?> págimnas </li>
     
-
 </ol>
 
 <p>E ambos livros é do autor <b><?=$livroA->getAutor()?></b>.</p> 
