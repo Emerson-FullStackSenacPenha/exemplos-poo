@@ -16,9 +16,9 @@ class Cliente {
         
         ){
 
-        $this->nome = $valorDoNome;
-        $this->idade = $valorDaIdade;
-        $this->email = $valorDoEmail;
+        $this->setNome ($valorDoNome);
+        $this->setIdade ($valorDaIdade);
+        $this->setEmail ($valorDoEmail);
         $this->telefone = $valorDoTelefone;
 
     }
@@ -48,6 +48,58 @@ class Cliente {
         return $this->telefone;
 
     }
+
+    /* Métodos setters: permitem acesso de escrita para definir valores de acordo com alguma regra/validação. */
+    private function setNome(string $valorNome):void {
+
+        // Se nome estiver vazio
+        if(empty($valorNome)){
+
+            // Apresentamos uma mensagem alertando
+            echo "<p style='color:red'>Nome não pode ser vazio</p>";
+        } else {
+
+            // Senão, pegamos o valor do nome e colocamos no atributo do objeto
+            $this->nome = $valorNome;
+
+        }
+
+    }
+
+    private function setEmail(string $valorEmail):void {
+
+        /* Usamos o filter_var com a constante FILTER_VALIDADE_EMAIL para o PHP verificar se o valor do e-mail informado é valido. Se sim, retorna TRUE, se não, retorna FALSE. */
+        $validaEmail = filter_var($valorEmail, FILTER_VALIDATE_EMAIL);
+
+        // Se o e-mail não for válido
+        if(!$validaEmail){
+
+            // Apresentamos uma mensagem alertando
+            echo "<p style='color:red'>E-mail invalido</p>";
+
+        } else {
+
+            // Senão, atribui ao atributo
+            $this->email = $valorEmail;
+
+        }
+
+    }
+
+    private function setIdade(string $valorDaIdade):void {
+
+        if($valorDaIdade < 0){
+
+            // Apresentamos uma mensagem alertando
+            echo "<p style='color:red'>Idade não pode ser negativa!</p>";
+
+        } 
+
+        $this->idade = $valorDaIdade;
+
+    }
+
+
 
 };
 
