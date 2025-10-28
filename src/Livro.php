@@ -39,8 +39,8 @@ private ?int $paginas;
 
     private function setTitulo(string $valorDoTitulo):void{
 
-        if((mb_strlen($valorDoTitulo) <= 30 )){
-            echo "<p style='color:red'>Titulo não pode ser menor que 30</p>";
+        if((mb_strlen($valorDoTitulo) <= 15 )){
+            echo "<p style='color:red'>Titulo não pode ser menor que 15</p>";
         }
 
         $this->titulo = $valorDoTitulo;
@@ -52,7 +52,7 @@ private ?int $paginas;
         if(empty($valorDaPagina)){
 
             // Apresentamos uma mensagem alertando
-            echo "<p style='color:red'>Nome não pode ser vazio</p>";
+            echo "<p style='color:red'>Paginas não pode ser vazio</p>";
         } 
 
             // Senão, pegamos o valor do nome e colocamos no atributo do objeto
