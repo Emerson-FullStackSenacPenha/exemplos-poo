@@ -30,7 +30,5 @@ $livroC = new Livro("O Retorno do Rei", "J.R.R. Tolkien", 420);
 
 <p>E ambos livros é do autor <b><?=$livroA->getAutor()?></b>.</p> 
 
-
-
 </body>
 </html>

@@ -58,23 +58,8 @@ private ?int $paginas;
             // Senão, pegamos o valor do nome e colocamos no atributo do objeto
             $this->paginas = $valorDaPagina;
 
-        
-
-
     }
 
 };
 
 ?>
-
-
-<!-- public function mostrarDados():void {
-
-        echo "  <div>
-        
-                <p> O livro <b>$this->titulo</b>, tem em torno de  <i>$this->paginas</i> páginas.
-
-                </div>";
-
-    } -->
-
