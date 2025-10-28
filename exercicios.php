@@ -2,11 +2,9 @@
 require_once "src/Livro.php";
 
 $livroA = new Livro("A Sociedade do Anel", "J.R.R. Tolkien", 250);
-
-/*
-$livroB = new Livro("2🗼", "J.R.R. Tolkien", 380);
+$livroB = new Livro("2🗼", "J.R.R. Tolkien");
 $livroC = new Livro("O Retorno do Rei", "J.R.R. Tolkien", 420);
-*/
+
 ?>
 
 <!DOCTYPE html>
@@ -24,7 +22,9 @@ $livroC = new Livro("O Retorno do Rei", "J.R.R. Tolkien", 420);
 
 <ol>
 
-    <li> <?=$livroA->getTitulo()?>, com <?=$livroA->getPaginas() ?? "não informado"?> págimnas </li>
+    <li> <?=$livroA->getTitulo()?>, com <?=$livroA->getPaginas() ?? "<b>não informado o nº de</b>"?> páginas </li>
+    <li> <?=$livroB->getTitulo()?>, com <?=$livroB->getPaginas() ?? "<b>não informado o nº de</b>"?> páginas </li>
+    <li> <?=$livroC->getTitulo()?>, com <?=$livroC->getPaginas() ?? "<b>não informado o nº de</b>"?> páginas </li>
     
 </ol>
 
